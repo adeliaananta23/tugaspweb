@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Janji Konsultasi - MindWell Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Buat Janji Konsultasi</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Halaman Utama</a></li>
+                    <li><a href="buat_janji.html">Buat Janji</a></li>
+                    <li><a href="lihat_janji.html">Lihat Janji</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form id="appointmentForm" action="process.php" method="post">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="tanggal">Tanggal Konsultasi:</label>
+                <input type="date" id="tanggal" name="tanggal" required><br>
+                <label for="waktu">Waktu Konsultasi:</label>
+                <input type="time" id="waktu" name="waktu" required><br>
+                <button type="submit">Buat Janji</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

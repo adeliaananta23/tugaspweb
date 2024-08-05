@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lihat Janji Konsultasi - MindWell Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lihat Janji Konsultasi</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Halaman Utama</a></li>
+                    <li><a href="buat_janji.html">Buat Janji</a></li>
+                    <li><a href="lihat_janji.html">Lihat Janji</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Data Janji Konsultasi</h2>
+            <div id="appointmentList">
+                <button onclick="loadAppointments()">Lihat Janji Konsultasi</button>
+                <table id="appointments">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Tanggal</th>
+                            <th>Waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data akan dimuat di sini -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
